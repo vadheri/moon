@@ -1,0 +1,63 @@
+/* Laptop Styles */
+@media screen and (max-width: 1400px){
+.nav-links{
+    gap: 10px;
+}
+.nav-links .btn-outline,.nav-links a,.nav-links .btn-primary{padding: 10px;}
+.nav-links a {
+    font-size: 16px;
+}
+}
+/* Mobile Styles */
+@media screen and (max-width: 1024px) {
+    .navbar{
+        padding: 24px;
+    }
+    .hamburger {
+        display: flex;
+        margin: -8px 0 0 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #330066;
+        text-align: center;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease-in-out;
+    }
+
+    .nav-links.active {
+        height: 100vh; /* Adjust based on content */
+    }
+
+    .nav-links li {
+        padding: 5px 0;
+    }
+
+    /* Hamburger Animation */
+    .hamburger.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 190px;
+        min-height: 100%;
+    }
+}
