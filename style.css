@@ -29,8 +29,7 @@ body {
     font-weight: bold;
     color: transparent;
     text-decoration: none;
-    background: url(../images/Logo.png);
-    
+    background: url(Logo.png);
     width: 100%;
     height: 100%;
     background-position: center;
